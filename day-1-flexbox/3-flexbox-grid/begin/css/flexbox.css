@@ -40,7 +40,10 @@ div img {
   margin-left: 4%;
   flex: 0 0 92%;
 }
-
+.col-5-1,
+.col-5-2 {
+  background-color: #cfc;
+}
 .col-1-2,
 .col-1-4 {
   background-color: #ffc;
@@ -57,12 +60,19 @@ div img {
 
 /* Mobile Landscape Screen Sizes */
 @media only screen and (min-width: 480px) {
+  .col-5-1 {
+    flex: 0 0 44%;
+    order: 2;
+  }
   .col-1-2,
   .col-2 {
     flex: 0 0 44%;
   }
   .col-1-4,
   .col-3 {
+    flex: 0 0 92%;
+  }
+  .col-5-2 {
     flex: 0 0 92%;
   }
 }
@@ -73,7 +83,12 @@ div img {
   .col-1-4 {
     flex: 0 0 20%;
   }
-  .col-2 {
+  .col-5-1 {
+    flex: 0 0 20%;
+    order: 0;
+  }
+  .col-2,
+  .col-5-2 {
     flex: 0 0 44%;
   }
   .col-3 {
